@@ -22,7 +22,7 @@ class CreateBannersTable extends Migration
             $table->string('product_text_color')->nullable();
             $table->string('product_text_location')->nullable();
             $table->string('text_button')->nullable();
-            $table->binary('is_active');
+            $table->boolean('is_active');
             $table->string('url_button')->nullable();
             $table->integer('order')->nullable();
             $table->timestamps();

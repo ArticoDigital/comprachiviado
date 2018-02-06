@@ -24,7 +24,7 @@ class CreateFalseProductsTable extends Migration
             $table->integer('price');
             $table->string('image_pc');
             $table->string('image_mobile')->nullable();
-            $table->binary('is_active');
+            $table->boolean('is_active');
             $table->string('location_product')->nullable();
 
             $table->integer('subcategory_id')->unsigned();

@@ -20,7 +20,7 @@ class CreateCategoriesTable extends Migration
             $table->string('background_color')->nullable();
             $table->string('icon');
             $table->string('description')->nullable();
-            $table->binary('is_active');
+            $table->boolean('is_active');
             $table->string('button_text');
             $table->string('button_background_color')->nullable();
             $table->timestamps();

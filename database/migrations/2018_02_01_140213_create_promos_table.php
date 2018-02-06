@@ -22,7 +22,7 @@ class CreatePromosTable extends Migration
             $table->string('special_media')->nullable();
             $table->longText('text_promo')->nullable();
             $table->integer('discount_percentage')->nullable();
-            $table->binary('is_active');
+            $table->boolean('is_active');
 
             $table->integer('false_product_id')->unsigned();
             $table->foreign('false_product_id')->references('id')->on('false_products');

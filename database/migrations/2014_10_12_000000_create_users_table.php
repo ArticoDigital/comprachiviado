@@ -21,8 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->date('birthday');
             $table->string('gender',1);
-            $table->binary('terms_accepted');
-            $table->binary('newsletter');
+            $table->boolean('terms_accepted');
+            $table->boolean('newsletter');
             $table->rememberToken();
             $table->timestamps();
         });
