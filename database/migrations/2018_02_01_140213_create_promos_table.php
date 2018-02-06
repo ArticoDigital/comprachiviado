@@ -18,11 +18,11 @@ class CreatePromosTable extends Migration
 
             $table->string('name');
             $table->date('init_date');
-            $table->date('finish_date');
-            $table->string('special_media');
-            $table->longText('text_promo');
-            $table->integer('discount_percenteage');
-            $table->binary('is_active');
+            $table->date('finish_date')->nullable();
+            $table->string('special_media')->nullable();
+            $table->longText('text_promo')->nullable();
+            $table->integer('discount_percentage')->nullable();
+            $table->binary('is_active')->default(0);
 
             $table->integer('false_product_id')->unsigned();
             $table->foreign('false_product_id')->references('id')->on('false_products');

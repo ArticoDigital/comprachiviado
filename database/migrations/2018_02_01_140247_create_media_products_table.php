@@ -21,8 +21,6 @@ class CreateMediaProductsTable extends Migration
 
             $table->integer('product_id');
             $table->string('product_type');
-            //$table->integer('commentable_id');
-            //$table->string('commentable_type');
 
             $table->timestamps();
         });

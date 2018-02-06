@@ -16,13 +16,13 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('text_color');
-            $table->string('background_color');
+            $table->string('text_color')->nullable();
+            $table->string('background_color')->nullable();
             $table->string('icon');
-            $table->string('description');
-            $table->binary('is_active');
+            $table->string('description')->nullable();
+            $table->binary('is_active')->default(0);
             $table->string('button_text');
-            $table->string('button_background_color');
+            $table->string('button_background_color')->nullable();
             $table->timestamps();
         });
     }

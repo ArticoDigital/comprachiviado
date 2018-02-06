@@ -17,8 +17,8 @@ class CreateOriginalProductsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->longText('description');
-            $table->string('video_promo');
-            $table->string('brand-name');
+            $table->string('video_promo')->nullable();
+            $table->string('brand-name')->nullable();
             $table->integer('price');
 
             $table->integer('false_product_id')->unsigned();

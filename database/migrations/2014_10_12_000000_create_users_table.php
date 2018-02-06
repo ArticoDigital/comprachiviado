@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->date('birthday');
-            $table->string('gender_id');
+            $table->string('gender',1);
             $table->binary('terms_accepted');
             $table->binary('newsletter');
             $table->rememberToken();

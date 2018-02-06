@@ -17,10 +17,10 @@ class CreateSubcategoriesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('description');
-            $table->binary('is_active');
+            $table->binary('is_active')->default(0);
 
             $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('categories'); 
+            $table->foreign('category_id')->references('id')->on('categories');
 
             $table->timestamps();
         });

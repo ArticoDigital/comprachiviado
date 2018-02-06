@@ -1,16 +1,14 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Promo extends Model
+class Special extends Model
 {
     //
+    protected $guarded = [];
     public function falseProduct(){
         return $this->belongsTo(False_product::class);
-    }
-    public function company(){
-        return $this->belongsTo(Company::class);
     }
 }

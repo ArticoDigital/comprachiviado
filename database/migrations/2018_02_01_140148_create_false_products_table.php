@@ -18,16 +18,17 @@ class CreateFalseProductsTable extends Migration
             $table->string('name');
             $table->longText('description');
 
-            $table->string('video_promo');
+            $table->string('video_promo')->nullable();
             $table->longText('invitation_text');
 
             $table->integer('price');
             $table->string('image_pc');
-            $table->string('image_mobile');
-            $table->string('location_product');
+            $table->string('image_mobile')->nullable();
+            $table->binary('is_active')->default(0);
+            $table->string('location_product')->nullable();
 
             $table->integer('subcategory_id')->unsigned();
-            $table->foreign('subcategory_id')->references('id')->on('subcategories'); 
+            $table->foreign('subcategory_id')->references('id')->on('subcategories');
 
 
             $table->timestamps();
