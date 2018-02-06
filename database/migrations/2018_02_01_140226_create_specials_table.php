@@ -18,7 +18,7 @@ class CreateSpecialsTable extends Migration
             $table->string('name');
             $table->string('special_image');
             $table->string('special_image_mobile')->nullable();
-            $table->binary('is_active')->default(0);
+            $table->binary('is_active');
 
             $table->integer('false_product_id')->unsigned();
             $table->foreign('false_product_id')->references('id')->on('false_products');

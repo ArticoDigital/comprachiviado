@@ -11,4 +11,9 @@ class Media_product extends Model
     public function media_Type(){
         return $this->belongsTo(Media_type::class);
     }
+
+    public function products()
+    {
+        return $this->morphTo();
+    }
 }

@@ -11,4 +11,7 @@ class Original_product extends Model
     public function falseProduct(){
         return $this->belongsTo(False_product::class);
     }
+    public function media_products() {
+        return $this->morphMany('Media_product', 'products');
+    }
 }

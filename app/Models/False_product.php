@@ -15,4 +15,7 @@ class False_product extends Model
     public function Original_product(){
         return $this->hasOne(Original_product::class);
     }
+    public function media_products() {
+        return $this->morphMany('Media_product', 'products');
+    }
 }
