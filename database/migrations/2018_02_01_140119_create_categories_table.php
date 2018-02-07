@@ -23,6 +23,7 @@ class CreateCategoriesTable extends Migration
             $table->boolean('is_active');
             $table->string('button_text');
             $table->string('button_background_color')->nullable();
+            $table->integer('order');
             $table->timestamps();
         });
     }

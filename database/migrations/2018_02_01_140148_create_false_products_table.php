@@ -16,7 +16,8 @@ class CreateFalseProductsTable extends Migration
         Schema::create('false_products', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->longText('description');
+            $table->string('shortdescription')->nullable();
+            $table->longText('description')->nullable();
 
             $table->string('video_promo')->nullable();
             $table->longText('invitation_text');

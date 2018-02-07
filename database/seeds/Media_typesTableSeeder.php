@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\Media_type;
 
 class Media_typesTableSeeder extends Seeder
 {
@@ -12,5 +13,11 @@ class Media_typesTableSeeder extends Seeder
     public function run()
     {
         //
+        Media_type::create([
+          'type' => 'Image',
+        ]);
+        Media_type::create([
+          'type' => 'Video',
+        ]);
     }
 }
