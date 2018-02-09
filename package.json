@@ -19,6 +19,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free-webfonts": "^1.0.3",
         "inuit-css": "^2.0.5"
     }
 }

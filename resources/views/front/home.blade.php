@@ -1,4 +1,4 @@
-@extends('layouts.general')
+@extends('layouts.front')
 @section('content')
-   yasdas
+   Compra Chiviado
 @endsection

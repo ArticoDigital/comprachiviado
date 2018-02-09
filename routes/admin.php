@@ -1,5 +1,3 @@
 <?php
-route::get('/',function(){
-
-});
+route::get('/','HomeController@dashboard')->name('dashboard');
 
