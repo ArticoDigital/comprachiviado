@@ -19,7 +19,7 @@ class PromosTableSeeder extends Seeder
           'discount_percentage' => 30,
           'is_active' => 1,
           'false_product_id' => 1,
-          'company_id'-> 1,
+          'company_id'=> 1,
         ]);
 
     }

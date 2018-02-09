@@ -1,3 +1,5 @@
 <?php
+route::get('/',function(){
 
+});
 
