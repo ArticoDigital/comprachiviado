@@ -35,14 +35,14 @@
 </header>
 <nav id="Nav-admin">
     <ul>
-        <li><a href=""><i class="fas fa-image "></i> Banner</a></li>
-        <li><a href=""><i class="fas fa-folder"></i>Categorias</a></li>
-        <li><a href=""><i class="fas fa-folder-open"></i>Subcategorias</a></li>
-        <li><a href=""><i class="fas fa-building"></i>Empresas</a></li>
-        <li><a href=""><i class="fas fa-bookmark"></i>Cupones</a></li>
-        <li><a href=""><i class="fas fa-archive"></i>Productos</a></li>
-        <li><a href=""><i class="fas fa-tag"></i>Promociones</a></li>
-        <li><a href=""><i class="fas fa-star"></i>Especiales</a></li>
+        <li><a href="{{route('banner.index')}}"><i class="fas fa-image "></i> Banner</a></li>
+        <li><a href="{{route('category.index')}}"><i class="fas fa-folder"></i>Categorias</a></li>
+        <li><a href="{{route('subcategory.index')}}"><i class="fas fa-folder-open"></i>Subcategorias</a></li>
+        <li><a href="{{route('company.index')}}"><i class="fas fa-building"></i>Empresas</a></li>
+        <li><a href="{{route('coupon.index')}}"><i class="fas fa-bookmark"></i>Cupones</a></li>
+        <li><a href="{{route('product.index')}}"><i class="fas fa-archive"></i>Productos</a></li>
+        <li><a href="{{route('promo.index')}}"><i class="fas fa-tag"></i>Promociones</a></li>
+        <li><a href="{{route('special.index')}}"><i class="fas fa-star"></i>Especiales</a></li>
     </ul>
 </nav>
 <main class="container">@yield('content')</main>
