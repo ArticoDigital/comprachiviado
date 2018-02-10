@@ -6858,3 +6858,14 @@ readers do not read off random characters that represent icons */
   margin-bottom: 2rem;
 }
 
+.Form {
+  max-width: 60rem;
+  margin: auto;
+}
+
+.Form label,
+.Form button {
+  margin-top: 2.4rem;
+  display: block;
+}
+
