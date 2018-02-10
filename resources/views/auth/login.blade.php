@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.front')
 
 @section('content')
     <div class=" row is-full-screen align-center justify-center">
