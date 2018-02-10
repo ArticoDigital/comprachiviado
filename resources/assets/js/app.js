@@ -1,6 +1,7 @@
-const menuToggle = document.getElementById('menu-toggle');
+const menuToggle = document.getElementById('menu-toggle'),
+    NavAdmin = document.getElementById('Nav-admin');
 
 menuToggle.addEventListener('click', () => {
-    console.log(this);
-    menuToggle.classList.toggle('open')
+    menuToggle.classList.toggle('open');
+    NavAdmin.classList.toggle('open');
 });

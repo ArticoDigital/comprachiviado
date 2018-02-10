@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="Header-admin p-20 m-b-24 is-shadow">
-    <div class="container row justify-between align-center ">
+    <div class=" row justify-between align-center ">
         <div id="menu-toggle">
             <div id="hamburger">
                 <span></span>
@@ -25,14 +25,28 @@
                 <span></span>
             </div>
         </div>
-        <div>Compra chiviado</div>
+        <div class="hide-tablet">Compra chiviado</div>
         <div class="row align-center">
             <span class="p-r-12" >{{auth()->user()->name . auth()->user()->lastname}}</span>
-            <a href="" class="far fa-bell"></a>
+            <a href="" class="far fa-bell p-r-12" ></a>
+            <a href="{{ url('/salir') }}" class="fas fa-sign-out-alt"></a>
         </div>
     </div>
 </header>
+<nav id="Nav-admin">
+    <ul>
+        <li><a href=""><i class="fas fa-image "></i> Banner</a></li>
+        <li><a href=""><i class="fas fa-folder"></i>Categorias</a></li>
+        <li><a href=""><i class="fas fa-folder-open"></i>Subcategorias</a></li>
+        <li><a href=""><i class="fas fa-building"></i>Empresas</a></li>
+        <li><a href=""><i class="fas fa-bookmark"></i>Cupones</a></li>
+        <li><a href=""><i class="fas fa-archive"></i>Productos</a></li>
+        <li><a href=""><i class="fas fa-tag"></i>Promociones</a></li>
+        <li><a href=""><i class="fas fa-star"></i>Especiales</a></li>
+    </ul>
+</nav>
 <main class="container">@yield('content')</main>
+
 
 <script src="{{mix('js/app.js')}}"></script>
 </body>

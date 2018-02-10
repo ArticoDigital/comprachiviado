@@ -75,13 +75,12 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
-var _this = this;
-
-var menuToggle = document.getElementById('menu-toggle');
+var menuToggle = document.getElementById('menu-toggle'),
+    NavAdmin = document.getElementById('Nav-admin');
 
 menuToggle.addEventListener('click', function () {
-    console.log(_this);
     menuToggle.classList.toggle('open');
+    NavAdmin.classList.toggle('open');
 });
 
 /***/ }),

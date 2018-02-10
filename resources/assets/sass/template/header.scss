@@ -1,0 +1,132 @@
+
+.Header-admin {
+  max-height: 6.4rem;
+  position: relative;
+  z-index: 2;
+}
+
+#Nav-admin {
+  padding-top: 2rem;
+  z-index: 1;
+  position: fixed;
+  top: 6.4rem;
+  left: -25rem;
+  height: calc(100vh - 64px);
+  background: #f5f7fa;
+  width: 25rem;
+  transition: .5s ease-in-out;
+  &.open {
+    transform: translateX(250px);
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    padding: .8rem;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  i{
+    margin-right: .4rem;
+    width: 2.4rem;
+    text-align: center;
+  }
+}
+
+#menu-toggle {
+  span {
+    display: block;
+    background: #566973;
+    border-radius: .2rem;
+    transition: .25s ease-in-out;
+  }
+  width: 3.2rem;
+  height: 3.2rem;
+  position: relative;
+  cursor: pointer;
+  background: rgba(255, 255, 255, .4);
+  border-radius: .5rem;
+  &:hover {
+    background: rgba(255, 255, 255, .8);
+  }
+  #hamburger {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    span {
+      transition: .25s ease-in-out;
+      width: 3.2rem;
+      height: .3rem;
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: .4rem 0;
+      &:nth-child(1) {
+        transition-delay: .5s;
+      }
+      &:nth-child(2) {
+        transition-delay: .625s;
+      }
+      &:nth-child(3) {
+        transition-delay: .75s;
+      }
+    }
+  }
+  #cross {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: rotate(45deg);
+    span {
+      &:nth-child(1) {
+        height: 0%;
+        width: .3rem;
+        position: absolute;
+        top: 10%;
+        left: 1.4rem;
+        transition-delay: 0s;
+      }
+      &:nth-child(2) {
+        width: 0%;
+        height: 3px;
+        position: absolute;
+        left: 10%;
+        top: 1.4rem;
+        transition-delay: .25s;
+      }
+    }
+  }
+}
+
+#menu-toggle.open {
+  #hamburger {
+    span {
+      width: 0%;
+      &:nth-child(1) {
+        transition-delay: 0s;
+      }
+      &:nth-child(2) {
+        transition-delay: .125s;
+      }
+      &:nth-child(3) {
+        transition-delay: .25s;
+      }
+    }
+  }
+  #cross {
+    span {
+      &:nth-child(1) {
+        height: 80%;
+        transition-delay: .625s;
+      }
+    }
+    span {
+      &:nth-child(2) {
+        width: 80%;
+        transition-delay: .375s;
+      }
+    }
+  }
+}
+
