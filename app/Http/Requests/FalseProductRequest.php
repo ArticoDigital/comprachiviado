@@ -25,6 +25,12 @@ class FalseProductRequest extends FormRequest
     {
         return [
             //
+            'name' => 'required',
+            'invitation_text' => 'required',
+            'price'  => 'required|numeric',
+            'image_pc' => 'required',
+            'is_active' => 'required|boolean',
+            'subcategory_id'=> 'required',
         ];
     }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Subcategory;
+use App\Models\Subcategory;
 use Illuminate\Http\Request;
 
 class SubcategoryController extends Controller
@@ -14,7 +14,8 @@ class SubcategoryController extends Controller
      */
     public function index()
     {
-        return view('admin.subcategory.index');
+        $subcategories = Subcategory::all();
+        return view('admin.subcategory.index', compact('subcategories'));
     }
 
     /**
@@ -25,6 +26,7 @@ class SubcategoryController extends Controller
     public function create()
     {
         //
+        return view('admin.subcategory.create');
     }
 
     /**
@@ -33,9 +35,12 @@ class SubcategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SubcategoryRequest $request)
     {
         //
+        $inputs = $request->all();
+        Subcategory::create($inputs);
+        return view('admin.subcategory.index')->with(['messageok' => 'Registro exitoso']);
     }
 
     /**

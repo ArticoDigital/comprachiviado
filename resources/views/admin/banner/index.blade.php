@@ -6,47 +6,31 @@
     </div>
     <div class="table-container p-t-40 " >
         <table>
-            <caption>Table Caption</caption>
+            <caption>Banners</caption>
             <thead>
             <tr>
-                <th>Table Heading 1</th>
-                <th>Table Heading 2</th>
-                <th>Table Heading 3</th>
-                <th>Table Heading 4</th>
-                <th>Table Heading 5</th>
+                <th>Título</th>
+                <th>Texto botón</th>
+                <th>Texto del producto</th>
+                <th>URL del botón</th>
+                <th>Orden</th>
+                <th>Activo</th>
             </tr>
             </thead>
 
             <tbody>
+              @foreach($banners as $banner)
             <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
+                <td>{{$banner->text_title}}</td>
+                <td>{{$banner->text_button}}</td>
+                <td>{{$banner->product_text_content}}</td>
+                <td>{{$banner->url_button}}</td>
+                <td>{{$banner->order}}</td>
+                <td>{{$banner->is_active}}</td>
             </tr>
-            <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
-            </tr>
-            <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
-            </tr>
-            <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
-            </tr>
+            @endforeach
             </tbody>
         </table>
     </div>
+
 @endsection

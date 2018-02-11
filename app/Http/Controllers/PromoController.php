@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Promo;
+use App\Models\Promo;
 use Illuminate\Http\Request;
 
 class PromoController extends Controller
@@ -14,7 +14,8 @@ class PromoController extends Controller
      */
     public function index()
     {
-        return view('admin.promo.index');
+        $promos = Promo::all();
+        return view('admin.promo.index',compact('promos'));
     }
 
     /**
@@ -25,6 +26,7 @@ class PromoController extends Controller
     public function create()
     {
         //
+        return view('admin.promo.create');
     }
 
     /**

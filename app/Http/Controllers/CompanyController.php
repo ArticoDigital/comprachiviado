@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Company;
+use App\Models\Company;
+use App\Http\Requests\CompanyRequest;
 use Illuminate\Http\Request;
 
 class CompanyController extends Controller
@@ -14,7 +15,8 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        return view('admin.company.index');
+      $companies = Company::all();
+        return view('admin.company.index',compact('companies'));
     }
 
     /**
@@ -25,6 +27,7 @@ class CompanyController extends Controller
     public function create()
     {
         //
+        return view('admin.company.create');
     }
 
     /**
@@ -33,9 +36,13 @@ class CompanyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CompanyRequest $request)
     {
         //
+        $inputs = $request->all();
+        Company::create($inputs);
+        $companies = Company::all();
+        return view('admin.company.create')->with(['messageok' => 'Registro exitoso']);
     }
 
     /**

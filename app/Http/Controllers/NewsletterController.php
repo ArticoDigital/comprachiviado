@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Newsletter;
+use App\Models\Newsletter;
 use Illuminate\Http\Request;
 
 class NewsletterController extends Controller
@@ -15,6 +15,8 @@ class NewsletterController extends Controller
     public function index()
     {
         //
+        $newsletters = Newsletter::all();
+        return view('admin.newsletter.index',compact('newsletters'));
     }
 
     /**

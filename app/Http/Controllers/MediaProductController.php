@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Media_product;
+use App\Models\Media_product;
 use Illuminate\Http\Request;
 
 class MediaProductController extends Controller
@@ -15,6 +15,8 @@ class MediaProductController extends Controller
     public function index()
     {
         //
+        $media_products = Media_product::all();
+        return view('admin.media_product.index',compact('media_products'));
     }
 
     /**

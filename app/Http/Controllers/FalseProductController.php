@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\False_product;
+use App\Models\False_product;
+use App\Models\Subcategory;
+use App\Http\Requests\FalseProductRequest;
 use Illuminate\Http\Request;
 
 class FalseProductController extends Controller
@@ -14,7 +16,8 @@ class FalseProductController extends Controller
      */
     public function index()
     {
-        return view('admin.product.index');
+      $false_products = False_product::all();
+        return view('admin.product.index',compact('false_products'));
     }
 
     /**
@@ -25,6 +28,8 @@ class FalseProductController extends Controller
     public function create()
     {
         //
+        $subcategories = Subcategory::all();
+        return view('admin.product.create',compact('subcategories'));
     }
 
     /**
@@ -33,9 +38,14 @@ class FalseProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FalseProductRequest $request)
     {
         //
+        $inputs = $request->all();
+        False_product::create($inputs);
+        $false_products = False_product::all();
+        return view('admin.product.index',compact('false_products'))->with(['messageok' => 'Registro exitoso']);
+
     }
 
     /**

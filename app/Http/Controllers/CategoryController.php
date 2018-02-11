@@ -15,7 +15,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('admin.category.index');
+        $categories = Category::all();
+        return view('admin.category.index', compact('categories'));
     }
 
     /**
@@ -40,7 +41,8 @@ class CategoryController extends Controller
         //
         $inputs = $request->all();
         Category::create($inputs);
-        return view('admin.category.index')->with(['messageok' => 'Registro exitoso']);
+        $categories = Category::all();
+        return view('admin.category.index', compact('categories'))->with(['messageok' => 'Registro exitoso']);
 
     }
 

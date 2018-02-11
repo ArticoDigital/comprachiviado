@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Special;
+use App\Models\Special;
 use Illuminate\Http\Request;
 
 class SpecialController extends Controller
@@ -14,7 +14,8 @@ class SpecialController extends Controller
      */
     public function index()
     {
-        return view('admin.special.index');
+      $specials = Special::all();
+        return view('admin.special.index', compact('specials'));
     }
 
     /**
@@ -25,6 +26,7 @@ class SpecialController extends Controller
     public function create()
     {
         //
+        return view('admin.special.create');
     }
 
     /**
