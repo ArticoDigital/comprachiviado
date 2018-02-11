@@ -25,6 +25,15 @@ class PromoRequest extends FormRequest
     {
         return [
             //
+            'name' => 'required',
+            'init_date' => 'required|date',
+            'finish_date' => 'date',
+            'discount_percentage' => 'numeric|digits_between:1,3',
+            'is_active' => 'required|boolean',
+            'false_product_id' => 'required',
+            'company_id' => 'required'
+
+
         ];
     }
 }

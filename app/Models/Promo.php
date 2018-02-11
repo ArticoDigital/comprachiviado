@@ -13,7 +13,7 @@ class Promo extends Model
         return $this->belongsTo(False_product::class);
     }
     public function company(){
-        return $this->hasOne(Company::class);
+        return $this->belongsTo(Company::class);
     }
 
 

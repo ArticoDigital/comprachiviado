@@ -29,7 +29,7 @@ class CategoryRequest extends FormRequest
             'icon' => 'required',
             'is_active' => 'required|boolean',
             'button_text' => 'required',
-            'order' => 'required|numeric|digits:2'
+            'order' => 'required|numeric|digits_between:1,2'
         ];
     }
 }

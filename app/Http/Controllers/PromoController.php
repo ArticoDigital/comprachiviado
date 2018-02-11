@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Promo;
+use App\Models\Company;
+use App\Models\False_product;
+use App\Http\Requests\PromoRequest;
 use Illuminate\Http\Request;
 
 class PromoController extends Controller
@@ -26,7 +29,9 @@ class PromoController extends Controller
     public function create()
     {
         //
-        return view('admin.promo.create');
+        $products = False_product::all();
+        $companies = Company::all();
+        return view('admin.promo.create',compact('companies','products'));
     }
 
     /**
@@ -35,9 +40,12 @@ class PromoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PromoRequest $request)
     {
         //
+        $inputs = $request->all();
+        Promo::create($inputs);
+        return view('admin.promo.create')->with(['messageok' => 'Registro exitoso']);
     }
 
     /**
