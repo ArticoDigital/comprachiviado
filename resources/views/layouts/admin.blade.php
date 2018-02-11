@@ -48,6 +48,9 @@
 @foreach ($errors->all() as $message)
     <div class="alert-error">{{$message}}</div>
 @endforeach
+@if(session('messageok'))
+  <div class="hola">{{session('messageok')}}</div>
+@endif
 <main class="container">@yield('content')</main>
 
 

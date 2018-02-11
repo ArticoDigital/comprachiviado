@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
+use App\Models\Category;
+use App\Http\Requests\CategoryRequest;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -25,6 +26,7 @@ class CategoryController extends Controller
     public function create()
     {
         //
+        return view('admin.category.create');
     }
 
     /**
@@ -33,9 +35,13 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CategoryRequest $request)
     {
         //
+        $inputs = $request->all();
+        Category::create($inputs);
+        return view('admin.category.index')->with(['messageok' => 'Registro exitoso']);
+
     }
 
     /**

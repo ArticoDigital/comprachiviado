@@ -10,7 +10,7 @@
             <input id="background_color" name="background_color" placeholder="Background color" type="text">
 
             <label for="background_image" class="m-t-24"> background Image</label>
-            <input id="background_image" name="background_image" placeholder="background Image" type="text">
+            <input id="background_image" name="background_image" class="{{($errors->first('background_image'))?'error':''}}" placeholder="background Image" type="text">
 
             <label for="text_title" class="m-t-24"> Título</label>
             <input id="text_title" name="text_title" placeholder="Titulo del Banner" type="text">
@@ -35,7 +35,7 @@
 
 
             <label for="url_button" class="m-t-24"> URL</label>
-            <input id="url_button" name="url_button" placeholder="url_button" type="text">
+            <input id="url_button" name="url_button" class="{{($errors->first('url_button'))?'error':''}}" placeholder="url_button" type="text">
 
             <label for="order" class="m-t-24"> Orden</label>
             <input id="order" name="order" placeholder="Orden en el banner" type="number">

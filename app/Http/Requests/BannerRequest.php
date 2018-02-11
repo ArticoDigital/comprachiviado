@@ -24,7 +24,10 @@ class BannerRequest extends FormRequest
     public function rules()
     {
         return [
-            'is_active' => 'required|boolean'
+            'is_active' => 'required|boolean',
+            'background_image' => 'required',
+            'url_button' => 'required_with:text_button'
         ];
     }
+    
 }

@@ -25,6 +25,11 @@ class CategoryRequest extends FormRequest
     {
         return [
             //
+            'name' => 'required',
+            'icon' => 'required',
+            'is_active' => 'required|boolean',
+            'button_text' => 'required',
+            'order' => 'required|numeric|digits:2'
         ];
     }
 }
