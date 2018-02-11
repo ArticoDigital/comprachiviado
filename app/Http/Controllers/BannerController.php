@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Banner;
+use App\Models\Banner;
 use App\Http\Requests\BannerRequest;
 use Illuminate\Http\Request;
 
@@ -37,6 +37,8 @@ class BannerController extends Controller
      */
     public function store(BannerRequest $request)
     {
+      $inputs = $request->all();
+      Banner::create($inputs);
 
     }
 

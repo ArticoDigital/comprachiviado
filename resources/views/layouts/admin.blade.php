@@ -45,6 +45,9 @@
         <li><a href="{{route('special.index')}}"><i class="fas fa-star"></i>Especiales</a></li>
     </ul>
 </nav>
+@foreach ($errors->all() as $message)
+    <div class="alert-error">{{$message}}</div>
+@endforeach
 <main class="container">@yield('content')</main>
 
 
