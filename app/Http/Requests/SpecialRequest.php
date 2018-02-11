@@ -25,6 +25,10 @@ class SpecialRequest extends FormRequest
     {
         return [
             //
+            'name' => 'required',
+            'special_image' => 'required',
+            'is_active' => 'required|boolean',
+            'false_product_id' => 'required',
         ];
     }
 }

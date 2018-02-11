@@ -3,6 +3,7 @@
 @section('content')
 
     <div>
+      <h2>Crear Banner</h2>
         <form class="Form" action="{{route('banner.store')}}" method="post">
             @csrf
 

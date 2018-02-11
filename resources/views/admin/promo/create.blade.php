@@ -2,6 +2,7 @@
 
 @section('content')
     <div>
+      <h2>Crear Promoción</h2>
         <form class="Form" action="{{route('promo.store')}}" method="post">
             @csrf
             <label for="name" class="m-t-24"> Nombre</label>

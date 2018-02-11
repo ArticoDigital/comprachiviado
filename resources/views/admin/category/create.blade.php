@@ -3,6 +3,7 @@
 @section('content')
 
     <div>
+      <h2>Crear Categoría</h2>
         <form class="Form" action="{{route('category.store')}}" method="post">
             @csrf
             <label for="name" class="m-t-24"> Nombre</label>

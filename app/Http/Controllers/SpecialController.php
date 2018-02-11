@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Special;
+use App\Models\False_product;
+use App\Http\Requests\SpecialRequest;
 use Illuminate\Http\Request;
 
 class SpecialController extends Controller
@@ -26,7 +28,8 @@ class SpecialController extends Controller
     public function create()
     {
         //
-        return view('admin.special.create');
+        $products = False_product::all();
+        return view('admin.special.create',compact('products'));
     }
 
     /**
@@ -35,9 +38,13 @@ class SpecialController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SpecialRequest $request)
     {
         //
+        $inputs = $request->all();
+        Special::create($inputs);
+        $specials = Special::all();
+        return view('admin.special.index', compact('specials'))->with(['messageok' => 'Registro exitoso']);
     }
 
     /**
