@@ -7,5 +7,6 @@ Route::resource('subcategory', 'SubcategoryController');
 Route::resource('company', 'CompanyController');
 Route::resource('coupon', 'CouponController');
 Route::resource('product', 'FalseProductController');
+Route::resource('product.originalproduct', 'OriginalProductController');
 Route::resource('promo', 'PromoController');
 Route::resource('special', 'SpecialController');

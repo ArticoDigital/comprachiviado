@@ -38,7 +38,7 @@
               @if($item->Original_product <> null)
                             <span>Ver producto original {{$item->Original_product->name}}</span>
               @else
-                            <span><a href="{{route('product.originalproduct.create',$item->id)}}">Agregar producto original</a></span>
+                            <span><a href="{{route('originalproduct.create')}}">Agregar producto original</a></span>
               @endif
             </td>
             <td>

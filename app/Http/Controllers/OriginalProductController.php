@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Original_product;
+use App\Models\Original_product;
+use App\Models\False_product;
 use Illuminate\Http\Request;
 
 class OriginalProductController extends Controller
@@ -22,9 +23,12 @@ class OriginalProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
         //
+        //$subcategories = Subcategory::all();
+        //return 'mostrando'.$id;
+        return view('admin.product.originalproduct.create',compact('id'));//,compact('subcategories'));
     }
 
     /**
@@ -33,9 +37,13 @@ class OriginalProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $id)
     {
         //
+        $inputs = $request->all();
+        Original_product::create($inputs);
+        $false_products = False_product::all();
+          return view('admin.product.index',compact('false_products'));
     }
 
     /**
