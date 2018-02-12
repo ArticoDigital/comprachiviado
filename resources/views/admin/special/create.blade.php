@@ -5,14 +5,6 @@
       <h2>Crear Especial</h2>
         <form class="Form" action="{{route('special.store')}}" method="post">
             @csrf
-
-
-            $table->string('special_image');
-            $table->string('special_image_mobile')->nullable();
-            $table->boolean('is_active');
-
-            $table->integer('false_product_id')->unsigned();
-
             <label for="name" class="m-t-24"> Nombre de la promo</label>
             <input id="name" name="name" class="{{($errors->first('name'))?'error':''}}" placeholder="Nombre producto" type="text" value="{{old('name')}}">
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Original_product;
 use App\Models\False_product;
+use App\Http\Requests\OriginalProductRequest;
 use Illuminate\Http\Request;
 
 class OriginalProductController extends Controller
@@ -37,7 +38,7 @@ class OriginalProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id)
+    public function store(OriginalProductRequest $request, $id)
     {
         //
         $inputs = $request->all();

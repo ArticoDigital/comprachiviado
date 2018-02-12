@@ -25,6 +25,11 @@ class OriginalProductRequest extends FormRequest
     {
         return [
             //
+            'name' => 'required',
+            'description' => 'required',
+            'price'  => 'required|numeric',
+            'is_active' => 'required|boolean',
+            'false_product_id'=> 'required|numeric',
         ];
     }
 }
