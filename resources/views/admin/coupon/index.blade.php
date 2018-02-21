@@ -1,9 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="row">
-    <a href="{{route('company.create')}}">Coupones</a>
-</div>
+
 <div class="table-container p-t-40 " >
     <table>
         <caption>Cupones que se han creado</caption>
