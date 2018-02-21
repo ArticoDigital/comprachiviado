@@ -5,9 +5,13 @@
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid";
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-regular";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-brands";
 
 // class general
 @import "template/header";
 @import "template/home";
 @import "template/admin/forms";
+
+// class front
+@import "template/front/home";
 

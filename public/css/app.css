@@ -6696,6 +6696,18 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free-webwebfa-brands-400.eot?9e18a02ed6dda4a9940892fcd9822e1e);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free-webwebfa-brands-400.eot?9e18a02ed6dda4a9940892fcd9822e1e) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free-webwebfa-brands-400.woff2?255b0c33d43f1d56415ffb24feeb8c3b) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free-webwebfa-brands-400.woff?83cd1635a00e9e52cbb32e6c898ce540) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free-webwebfa-brands-400.ttf?fa5daef09950d89da09e8ff55fb19e65) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free-webwebfa-brands-400.svg?149e28f6450aad3538d99519b21978e8) format("svg");
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
 .Header-admin {
   max-height: 6.4rem;
   position: relative;
@@ -6867,5 +6879,81 @@ readers do not read off random characters that represent icons */
 .Form button {
   margin-top: 2.4rem;
   display: block;
+}
+
+@font-face {
+  font-family: 'font/OAF 300';
+  src: url(/fonts/OAF-300.eot?2a8c06a0078b8a0c86697f92d426f35f);
+  src: url(/fonts/OAF-300.eot?2a8c06a0078b8a0c86697f92d426f35f) format("embedded-opentype"), url(/fonts/OAF-300.woff2?27cc9b181b450abd941b7aadfee67857) format("woff2"), url(/fonts/OAF-300.woff?f9cbabdfcf996e21dfb44a4522391cbf) format("woff"), url(/fonts/OAF-300.ttf?2a83eddf96d9935bcfd2d6057ec7b109) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.search input {
+  max-width: 25rem;
+  height: 2.6rem;
+  font-size: 1.2rem !important;
+  padding: 0 1rem !important;
+}
+
+.search button {
+  min-height: 2rem;
+  max-width: 2rem;
+  min-width: 4rem;
+  padding: 0 11px;
+  -webkit-transform: translateX(-39px);
+          transform: translateX(-39px);
+}
+
+.products > div {
+  margin: 0 .2rem;
+}
+
+.special img {
+  max-width: 25rem;
+  margin: auto;
+  display: block;
+}
+
+.main-font {
+  font-family: 'OAF 300', serif;
+}
+
+.social-nav {
+  list-style: none;
+}
+
+.social-nav li {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.social-nav i {
+  color: white;
+}
+
+.nav {
+  background: orangered;
+}
+
+.nav li {
+  margin: 0 1rem;
+}
+
+.cart span {
+  color: orangered;
+  font-size: 2rem;
+}
+
+.cart * {
+  margin: 0 .4rem;
+}
+
+.Header-front {
+  background: url(/images/circulos-izq-compressor.png?2d554ad7cc599f44c9a1ee1bfbc3bd6e) no-repeat calc(-150px) 0, url(/images/circulos-der-compressor.png?113c9ee65eeec1195d7496614e76f590) no-repeat calc(100% + 180px) 0, url(/images/trama-back.png?b5550e305d1a8cbbd410e65ebf91a7d9);
+}
+
+.Header-front a {
+  color: white;
 }
 
