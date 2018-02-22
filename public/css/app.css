@@ -6966,11 +6966,15 @@ readers do not read off random characters that represent icons */
 }
 
 .Header-front {
-  background: url(/images/circulos-izq-compressor.png?2d554ad7cc599f44c9a1ee1bfbc3bd6e) no-repeat calc(-150px) 0, url(/images/circulos-der-compressor.png?113c9ee65eeec1195d7496614e76f590) no-repeat calc(100% + 180px) 0, url(/images/trama-back.png?b5550e305d1a8cbbd410e65ebf91a7d9);
+  background: url(/images/circulos-izq-compressor.png?2d554ad7cc599f44c9a1ee1bfbc3bd6e) no-repeat calc(-50px) 0, url(/images/circulos-der-compressor.png?113c9ee65eeec1195d7496614e76f590) no-repeat calc(100% + 80px) 0, url(/images/trama-back.png?b5550e305d1a8cbbd410e65ebf91a7d9);
 }
 
 .Header-front a {
   color: white;
+}
+
+.Header-front .container {
+  max-width: 97rem;
 }
 
 .slide {

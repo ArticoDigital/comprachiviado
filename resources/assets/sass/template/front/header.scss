@@ -77,12 +77,15 @@
 
 .Header-front {
   background:
-          url("../imgs/circulos-izq-compressor.png") no-repeat calc(-150px) 0,
-          url("../imgs/circulos-der-compressor.png") no-repeat calc(100% + 180px) 0,
+          url("../imgs/circulos-izq-compressor.png") no-repeat calc(-50px) 0,
+          url("../imgs/circulos-der-compressor.png") no-repeat calc(100% + 80px) 0,
           url("../imgs/trama-back.png");
 
   a {
     color: white;
+  }
+  .container{
+    max-width: 97rem;
   }
 
 }
