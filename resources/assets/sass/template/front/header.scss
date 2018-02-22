@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'font/OAF 300';
+  src: url('font/OAF-300.eot');
+  src: url('font/OAF-300.eot?#iefix') format('embedded-opentype'),
+  url('font/OAF-300.woff2') format('woff2'),
+  url('font/OAF-300.woff') format('woff'),
+  url('font/OAF-300.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.search {
+  input {
+    max-width: 25rem;
+    height: 2.6rem;
+    font-size: 1.2rem !important;
+    padding: 0 1rem !important;
+  }
+  button {
+    border-radius: 0 .3rem .3rem 0  ;
+    min-height: 2rem;
+    min-width: 3.6rem;
+    padding: .3rem 0 0 0;
+    transform: translateX(-35px);
+    background: #d6cc97;
+  }
+}
+
+
+.social-nav {
+  list-style: none;
+  li {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  i {
+    color: white;
+  }
+}
+
+.nav {
+  background: #eb6045;
+  padding: 0;
+  min-height: auto;
+
+  a{
+    color: #0c383b !important;
+    padding: .6rem 1.6rem ;
+    display: block;
+    &:hover, &.selected{
+      background: #518b8d;
+      opacity: 1;
+      color: white !important;
+      path{
+        fill: white;
+      }
+    }
+  }
+}
+.nav-liContainer{
+  display: flex;
+  align-items: center;
+  span{
+    margin-left: .8rem;
+  }
+}
+
+.cart {
+  span {
+    color: orangered;
+    font-size: 2rem;
+  }
+  * {
+    margin: 0 .4rem;
+  }
+}
+
+.Header-front {
+  background:
+          url("../imgs/circulos-izq-compressor.png") no-repeat calc(-150px) 0,
+          url("../imgs/circulos-der-compressor.png") no-repeat calc(100% + 180px) 0,
+          url("../imgs/trama-back.png");
+
+  a {
+    color: white;
+  }
+
+}

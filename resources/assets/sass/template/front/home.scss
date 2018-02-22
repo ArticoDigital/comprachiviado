@@ -1,84 +1,39 @@
-@font-face {
-  font-family: 'font/OAF 300';
-  src: url('font/OAF-300.eot');
-  src: url('font/OAF-300.eot?#iefix') format('embedded-opentype'),
-  url('font/OAF-300.woff2') format('woff2'),
-  url('font/OAF-300.woff') format('woff'),
-  url('font/OAF-300.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+.slide{
+  background-image: url("../imgs/back-slide-compressor.png");
+  background-size: cover;
+  background-position: center;
+  height: 45rem;
 }
+.category-product{
+  padding: 0;
+  margin: 4rem auto;
+}
+.products{
+  max-width: 93rem;
 
-.search {
-  input {
-    max-width: 25rem;
-    height: 2.6rem;
-    font-size: 1.2rem !important;
-    padding: 0 1rem !important;
-  }
-  button {
-    min-height: 2rem;
-    max-width: 2rem;
-    min-width: 4rem;
-    padding: 0 11px;
-    transform: translateX(-39px);
+  h2{
+    background: #518b8d;
+    max-width: 90.8rem;
+    margin: 0 auto 9px;
+    color: white;
+    text-align: center;
   }
 }
-
-.products {
-  > div {
-    margin: 0 .2rem;
-  }
+.product{
+  max-width: 30rem;
+  margin: .2rem;
 }
-
 .special {
+  max-width: 27rem;
   img {
-    max-width: 25rem;
+    max-width: 27rem;
     margin: auto;
     display: block;
   }
-}
-
-.main-font {
-  font-family: 'OAF 300', serif;
-}
-
-.social-nav {
-  list-style: none;
-  li {
-    padding: 1rem;
-    font-size: 2rem;
-  }
-  i {
+  h2{
+    background: #eb6045;
+    max-width: 27rem;
+    margin: auto;
     color: white;
   }
-}
-
-.nav {
-  background: orangered;
-  li {
-    margin: 0 1rem;
-  }
-}
-
-.cart {
-  span {
-    color: orangered;
-    font-size: 2rem;
-  }
-  * {
-    margin: 0 .4rem;
-  }
-}
-
-.Header-front {
-  background:
-          url("../imgs/circulos-izq-compressor.png") no-repeat calc(-150px) 0,
-          url("../imgs/circulos-der-compressor.png") no-repeat calc(100% + 180px) 0,
-          url("../imgs/trama-back.png");
-
-  a {
-    color: white;
-  }
-
 }

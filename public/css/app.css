@@ -6897,26 +6897,13 @@ readers do not read off random characters that represent icons */
 }
 
 .search button {
+  border-radius: 0 .3rem .3rem 0;
   min-height: 2rem;
-  max-width: 2rem;
-  min-width: 4rem;
-  padding: 0 11px;
-  -webkit-transform: translateX(-39px);
-          transform: translateX(-39px);
-}
-
-.products > div {
-  margin: 0 .2rem;
-}
-
-.special img {
-  max-width: 25rem;
-  margin: auto;
-  display: block;
-}
-
-.main-font {
-  font-family: 'OAF 300', serif;
+  min-width: 3.6rem;
+  padding: .3rem 0 0 0;
+  -webkit-transform: translateX(-35px);
+          transform: translateX(-35px);
+  background: #d6cc97;
 }
 
 .social-nav {
@@ -6933,11 +6920,40 @@ readers do not read off random characters that represent icons */
 }
 
 .nav {
-  background: orangered;
+  background: #eb6045;
+  padding: 0;
+  min-height: auto;
 }
 
-.nav li {
-  margin: 0 1rem;
+.nav a {
+  color: #0c383b !important;
+  padding: .6rem 1.6rem;
+  display: block;
+}
+
+.nav a:hover,
+.nav a.selected {
+  background: #518b8d;
+  opacity: 1;
+  color: white !important;
+}
+
+.nav a:hover path,
+.nav a.selected path {
+  fill: white;
+}
+
+.nav-liContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-liContainer span {
+  margin-left: .8rem;
 }
 
 .cart span {
@@ -6954,6 +6970,52 @@ readers do not read off random characters that represent icons */
 }
 
 .Header-front a {
+  color: white;
+}
+
+.slide {
+  background-image: url(/images/back-slide-compressor.png?cfe60379249e9de131a40125dc7bfe34);
+  background-size: cover;
+  background-position: center;
+  height: 45rem;
+}
+
+.category-product {
+  padding: 0;
+  margin: 4rem auto;
+}
+
+.products {
+  max-width: 93rem;
+}
+
+.products h2 {
+  background: #518b8d;
+  max-width: 90.8rem;
+  margin: 0 auto 9px;
+  color: white;
+  text-align: center;
+}
+
+.product {
+  max-width: 30rem;
+  margin: .2rem;
+}
+
+.special {
+  max-width: 27rem;
+}
+
+.special img {
+  max-width: 27rem;
+  margin: auto;
+  display: block;
+}
+
+.special h2 {
+  background: #eb6045;
+  max-width: 27rem;
+  margin: auto;
   color: white;
 }
 
