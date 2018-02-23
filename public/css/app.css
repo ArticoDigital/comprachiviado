@@ -6989,6 +6989,11 @@ readers do not read off random characters that represent icons */
   margin: 4rem auto;
 }
 
+.newsletter {
+  background-image: url(/images/newsletter.png?775ec82475f896cda06844b8ebf635c4);
+  width: re;
+}
+
 .products {
   max-width: 93rem;
 }
@@ -6996,9 +7001,20 @@ readers do not read off random characters that represent icons */
 .products h2 {
   background: #518b8d;
   max-width: 90.8rem;
-  margin: 0 auto 9px;
-  color: white;
+  margin: 0 auto .9rem;
+  color: #0c383b;
   text-align: center;
+}
+
+.products h2 i {
+  margin-left: 1rem;
+  font-size: 2.6rem;
+  position: relative;
+  top: .2rem;
+}
+
+.products h2 svg {
+  margin-right: 1rem;
 }
 
 .product {
