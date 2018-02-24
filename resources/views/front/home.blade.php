@@ -1,16 +1,48 @@
 @extends('layouts.front')
 @section('content')
 	<section class="slide">
-
+		<div class="slide-nav row justify-center align-center">
+			<span>
+<svg width="20px" height="36px" viewBox="0 0 20 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="flecha-slide" fill="#FFFDFD" fill-rule="nonzero">
+            <path d="M17.584741,35.6742899 C16.9666168,35.6742899 16.3484926,35.4386377 15.8771883,34.9669222 L0.881403942,19.9719604 C-0.293155476,18.7945221 -0.293155476,16.8817505 0.87852512,15.705546 L15.8771883,0.707294112 C16.8202081,-0.235725757 18.3496852,-0.236137017 19.2927051,0.707294112 C20.2357249,1.65031398 20.2357249,3.17979104 19.2927051,4.12281091 L5.57799657,17.8371081 L19.2927051,31.5518166 C20.2357249,32.4948365 20.2361362,34.0243136 19.2927051,34.9673334 C18.8209895,35.4386377 18.2028653,35.6742899 17.584741,35.6742899 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg> </span>
+		</div>
+		<div class="slide-nav slide-nav-der row justify-center align-center">
+			<span>
+<svg width="20px" height="36px" viewBox="0 0 20 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="flecha-slide" fill="#FFFDFD" fill-rule="nonzero">
+            <path d="M17.584741,35.6742899 C16.9666168,35.6742899 16.3484926,35.4386377 15.8771883,34.9669222 L0.881403942,19.9719604 C-0.293155476,18.7945221 -0.293155476,16.8817505 0.87852512,15.705546 L15.8771883,0.707294112 C16.8202081,-0.235725757 18.3496852,-0.236137017 19.2927051,0.707294112 C20.2357249,1.65031398 20.2357249,3.17979104 19.2927051,4.12281091 L5.57799657,17.8371081 L19.2927051,31.5518166 C20.2357249,32.4948365 20.2361362,34.0243136 19.2927051,34.9673334 C18.8209895,35.4386377 18.2028653,35.6742899 17.584741,35.6742899 Z" id="Shape" transform="translate(10.000124, 17.837082) scale(-1, 1) translate(-10.000124, -17.837082) "></path>
+        </g>
+    </g>
+</svg> </span>
+		</div>
+		<div class="container">
+			<img class="photo-chivi" src="{{asset('images/foto-chivi.png')}}" alt="">
+			<img class="photo-message" src="{{asset('images/globo-texto.png')}}" alt="">
+			<img class="photo-product" src="{{asset('images/wiskhy.png')}}" alt="">
+			<p class="slide-p">
+				<span>wiskhy</span>
+				<span>paló </span>
+				<span>seco</span>
+			</p>
+		</div>
 	</section>
-
 	<section class="row container category-product justify-around">
 		<article class="special">
 			<h2 class="is-text-center">Especiales</h2>
 			<img src="images/banner-01.png" alt="">
 		</article>
 		<article class="products">
-			<h2 class="col-16 row justify-center align-center" style="color: white">
+
+			<h2 class=" row justify-center align-center" style="color: white;">
 				<svg width="43px" height="40px" viewBox="0 0 43 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
 					 xmlns:xlink="http://www.w3.org/1999/xlink">
 					<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -32,16 +64,16 @@
 				</svg>
 				<strong>Bebidas </strong><i>El mejor traguito al mejor precio</i>
 			</h2>
-			<div class="row justify-center">
+			<div class="row justify-end">
 				@for($i = 1 ; $i <= 6; $i++)
 					<div class="product"><img src="images/imagen_{{$i}}.png" alt=""></div>
 			@endfor
 		</article>
 	</section>
+	<div class="link-more container row justify-center"><a href="">Ver más cositas pa’ tomar ></a></div>
 	<section class="row container category-product justify-around">
 		<article class="products">
 			<h2 class="col-16 row justify-center align-center" style="background: #d5ab53">
-
 
 				<svg width="43px" height="40px" viewBox="0 0 43 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
 					 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -164,7 +196,7 @@
 				</svg>
 				<strong>Aparatos electrónicos</strong><i>De todito y solo modernos</i>
 			</h2>
-			<div class="row justify-center">
+			<div class="row justify-start">
 				@for($i = 7 ; $i <= 12; $i++)
 					<div class="product"><img src="images/imagen_{{$i}}.png" alt=""></div>
 			@endfor
@@ -174,7 +206,8 @@
 			<img src="images/banner-02.png" alt="">
 		</article>
 	</section>
-	<section class="row container category-product">
+	<div class="link-more container row justify-center"><a href="">Ver más cositas cheveres ></a></div>
+	<section class="row container category-product justify-around">
 		<article class="special">
 			<h2 class="is-text-center">Especiales</h2>
 			<img src="images/banner-03.png" alt="">
@@ -205,8 +238,8 @@
 			@endfor
 		</article>
 	</section>
-
-	<section class="row container category-product">
+	<div class="link-more container row justify-center"><a href="">Ver más copias “originales” ></a></div>
+	<section class="row container category-product justify-around">
 		<article class="products">
 			<h2 class="col-16 row justify-center align-center" style="background: #789380">
 
@@ -351,7 +384,8 @@
 			<img src="images/banner-04.png" alt="">
 		</article>
 	</section>
-	<section class="row container category-product">
+	<div class="link-more container row justify-center"><a href="">Ver más pinticas ></a></div>
+	<section class="row container category-product justify-around">
 		<article class="special">
 			<h2 class="is-text-center">Especiales</h2>
 			<img src="images/banner-05.png" alt="">
@@ -503,4 +537,5 @@
 			@endfor
 		</article>
 	</section>
+	<div class="link-more container row justify-center"><a href="">Vea más, huela bueno ></a></div>
 @endsection

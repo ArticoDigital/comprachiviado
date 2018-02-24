@@ -1,27 +1,108 @@
-.slide{
+.slide {
   background-image: url("../imgs/back-slide-compressor.png");
   background-size: cover;
   background-position: center;
   height: 45rem;
+  margin-bottom: 4rem;
+  .container {
+    position: relative;
+    height: 100%;
+  }
 }
-.category-product{
-  padding: 0;
-  margin: 4rem auto;
-}
-.newsletter{
-  background-image: url("../imgs/newsletter.png");
-  width: re;
-}
-.products{
-  max-width: 93rem;
 
-  h2{
+.photo-chivi {
+  max-height: 430px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.photo-message {
+  max-height: 285px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  top: 4px;
+  left: 125px;
+}
+
+.photo-product {
+  max-height: 340px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  top: 24px;
+  left: 540px;
+}
+
+.slide-p {
+  font-family: 'font/OAF 300';
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  top: 5.4rem;
+  left: 750px;
+  text-shadow: 4px 3px 0 white;
+  font-size: 14rem;
+  line-height: .6em;
+  text-align: center;
+  span {
+    display: block;
+    &:first-child {
+      font-size: 9rem;
+    }
+  }
+}
+
+.slide-nav {
+  width: 5rem;
+  height: 45rem;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  &:hover {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+}
+
+.slide-nav-der {
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  &:hover {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+}
+
+.category-product {
+  padding: 0;
+}
+
+.newsletter {
+  background-image: url("../imgs/newsletter.png");
+}
+
+.link-more {
+  padding: 1rem 0 5rem;
+  a {
+    color: white;
+    padding: .2rem 2rem;
+    background: #d5694e;
+    border-radius: .4rem;
+    font-weight: 300;
+  }
+}
+
+.products {
+  max-width: 91.2rem;
+
+  h2 {
     background: #518b8d;
-    max-width: 90.8rem;
+    width: 91rem;
     margin: 0 auto .9rem;
     color: #0c383b;
     text-align: center;
-    i{
+    i {
       margin-left: 1rem;
       font-size: 2.6rem;
       position: relative;
@@ -32,10 +113,12 @@
     }
   }
 }
-.product{
+
+.product {
   max-width: 30rem;
   margin: .2rem;
 }
+
 .special {
   max-width: 27rem;
   img {
@@ -43,7 +126,7 @@
     margin: auto;
     display: block;
   }
-  h2{
+  h2 {
     background: #eb6045;
     max-width: 27rem;
     margin: auto;

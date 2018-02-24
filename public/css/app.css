@@ -6977,30 +6977,194 @@ readers do not read off random characters that represent icons */
   max-width: 97rem;
 }
 
+.copy-cc {
+  background: #eeda61;
+  padding: .8rem 0 .7rem;
+}
+
+.copy-cc p {
+  font-size: 1rem;
+}
+
+.Footer-nav {
+  background: #518b8d;
+  padding: 0;
+  min-height: auto;
+}
+
+.Footer-nav g,
+.Footer-nav path {
+  fill: white !important;
+}
+
+.Footer-nav a {
+  color: white !important;
+  padding: .6rem 1.6rem;
+  display: block;
+}
+
+.Footer-content {
+  background: #0C383B;
+  padding: 2rem 0 4rem;
+  color: white;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+
+.Footer-content form {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.Footer-content a {
+  color: white;
+}
+
+.Footer-content h3 {
+  color: #d5ab53;
+}
+
+.Footer-content input,
+.Footer-content button {
+  border-radius: 34px !important;
+  padding: 2px 17px !important;
+  font-size: 14px !important;
+  font-weight: 100 !important;
+  background: #D6CC97;
+}
+
+.Footer-content button {
+  position: absolute;
+  right: 0;
+  min-height: 2.3rem;
+  border-radius: 2.4rem 3.4rem 3.4rem 2.4rem !important;
+  padding: .2rem 5.4rem !important;
+  background: #D5AB53;
+  color: white;
+}
+
+.Footer-copy {
+  background: #eeda61;
+  font-size: 1.2rem;
+  padding: .8rem 0 .7rem;
+}
+
 .slide {
   background-image: url(/images/back-slide-compressor.png?cfe60379249e9de131a40125dc7bfe34);
   background-size: cover;
   background-position: center;
   height: 45rem;
+  margin-bottom: 4rem;
+}
+
+.slide .container {
+  position: relative;
+  height: 100%;
+}
+
+.photo-chivi {
+  max-height: 430px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.photo-message {
+  max-height: 285px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  top: 4px;
+  left: 125px;
+}
+
+.photo-product {
+  max-height: 340px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  top: 24px;
+  left: 540px;
+}
+
+.slide-p {
+  font-family: 'font/OAF 300';
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  top: 5.4rem;
+  left: 750px;
+  text-shadow: 4px 3px 0 white;
+  font-size: 14rem;
+  line-height: .6em;
+  text-align: center;
+}
+
+.slide-p span {
+  display: block;
+}
+
+.slide-p span:first-child {
+  font-size: 9rem;
+}
+
+.slide-nav {
+  width: 5rem;
+  height: 45rem;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(transparent));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.slide-nav:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(transparent));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.slide-nav-der {
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.slide-nav-der:hover {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .category-product {
   padding: 0;
-  margin: 4rem auto;
 }
 
 .newsletter {
   background-image: url(/images/newsletter.png?775ec82475f896cda06844b8ebf635c4);
-  width: re;
+}
+
+.link-more {
+  padding: 1rem 0 5rem;
+}
+
+.link-more a {
+  color: white;
+  padding: .2rem 2rem;
+  background: #d5694e;
+  border-radius: .4rem;
+  font-weight: 300;
 }
 
 .products {
-  max-width: 93rem;
+  max-width: 91.2rem;
 }
 
 .products h2 {
   background: #518b8d;
-  max-width: 90.8rem;
+  width: 91rem;
   margin: 0 auto .9rem;
   color: #0c383b;
   text-align: center;
