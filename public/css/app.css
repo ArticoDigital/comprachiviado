@@ -6889,11 +6889,28 @@ readers do not read off random characters that represent icons */
   font-style: normal;
 }
 
+.search {
+  position: relative;
+}
+
 .search input {
   max-width: 25rem;
   height: 2.6rem;
   font-size: 1.2rem !important;
   padding: 0 1rem !important;
+}
+
+@media (min-width: 45rem) {
+  .search input {
+    max-width: 100%;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 1048px) {
+  .search input {
+    max-width: 25rem;
+  }
 }
 
 .search button {
@@ -6904,6 +6921,21 @@ readers do not read off random characters that represent icons */
   -webkit-transform: translateX(-35px);
           transform: translateX(-35px);
   background: #d6cc97;
+}
+
+@media (min-width: 45rem) {
+  .search button {
+    position: absolute;
+    left: 100%;
+    padding: .6rem 0 0 0;
+  }
+}
+
+@media (min-width: 1048px) {
+  .search button {
+    position: static;
+    padding: .3rem 0 0 0;
+  }
 }
 
 .social-nav {
@@ -6927,8 +6959,16 @@ readers do not read off random characters that represent icons */
 
 .nav a {
   color: #0c383b !important;
-  padding: .6rem 1.6rem;
   display: block;
+  padding: .6rem .2rem;
+  font-family: 'Boogaloo', cursive;
+  font-size: 2rem;
+}
+
+@media (min-width: 45rem) {
+  .nav a {
+    padding: .6rem 2rem;
+  }
 }
 
 .nav a:hover,
@@ -6999,8 +7039,10 @@ readers do not read off random characters that represent icons */
 
 .Footer-nav a {
   color: white !important;
-  padding: .6rem 1.6rem;
   display: block;
+  padding: .6rem 2rem;
+  font-family: 'Boogaloo', cursive;
+  font-size: 2rem;
 }
 
 .Footer-content {
@@ -7022,6 +7064,7 @@ readers do not read off random characters that represent icons */
 
 .Footer-content h3 {
   color: #d5ab53;
+  font-family: 'Boogaloo', cursive;
 }
 
 .Footer-content input,
@@ -7055,6 +7098,13 @@ readers do not read off random characters that represent icons */
   background-position: center;
   height: 45rem;
   margin-bottom: 4rem;
+  display: none;
+}
+
+@media (min-width: 1048px) {
+  .slide {
+    display: block;
+  }
 }
 
 .slide .container {
@@ -7138,8 +7188,20 @@ readers do not read off random characters that represent icons */
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
+.main-font .slide:nth-child(1) + .category-product {
+  padding-top: 2rem;
+}
+
 .category-product {
   padding: 0;
+}
+
+.category-product.container {
+  width: 100%;
+}
+
+.category-product h2 {
+  font-family: 'Boogaloo', cursive;
 }
 
 .newsletter {
@@ -7159,15 +7221,27 @@ readers do not read off random characters that represent icons */
 }
 
 .products {
-  max-width: 91.2rem;
+  max-width: 100%;
+}
+
+@media (min-width: 1048px) {
+  .products {
+    max-width: 91.2rem;
+  }
 }
 
 .products h2 {
   background: #518b8d;
-  width: 91rem;
+  width: 100%;
   margin: 0 auto .9rem;
   color: #0c383b;
   text-align: center;
+}
+
+@media (min-width: 1048px) {
+  .products h2 {
+    max-width: 91rem;
+  }
 }
 
 .products h2 i {
@@ -7182,12 +7256,27 @@ readers do not read off random characters that represent icons */
 }
 
 .product {
-  max-width: 30rem;
-  margin: .2rem;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+@media (min-width: 1048px) {
+  .product {
+    max-width: 30rem;
+    margin: .2rem;
+  }
 }
 
 .special {
   max-width: 27rem;
+  display: none;
+}
+
+@media (min-width: 1048px) {
+  .special {
+    max-width: 27rem;
+    display: block;
+  }
 }
 
 .special img {

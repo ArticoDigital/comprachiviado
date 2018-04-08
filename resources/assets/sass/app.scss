@@ -7,6 +7,26 @@
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-regular";
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-brands";
 
+// Functions
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (min-width: 36rem) {
+      @content
+    }
+  } @else if $breakpoint == "medium" {
+    @media (min-width: 45rem) {
+      @content
+    }
+  } @else if $breakpoint == "large" {
+    @media (min-width: 1048px) {
+      @content
+    }
+  }
+}
+
+//Vars
+:root {
+}
 // class general
 @import "template/header";
 @import "template/home";

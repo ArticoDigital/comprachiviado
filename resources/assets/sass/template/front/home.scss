@@ -4,6 +4,10 @@
   background-position: center;
   height: 45rem;
   margin-bottom: 4rem;
+  display: none;
+  @include respond-to(large){
+    display: block;
+  }
   .container {
     position: relative;
     height: 100%;
@@ -73,9 +77,17 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
 }
-
+.main-font  .slide:nth-child(1) + .category-product{
+  padding-top: 2rem;
+}
 .category-product {
+  &.container{
+    width: 100%;
+  }
   padding: 0;
+  h2{
+    font-family: 'Boogaloo', cursive;
+  }
 }
 
 .newsletter {
@@ -94,14 +106,20 @@
 }
 
 .products {
-  max-width: 91.2rem;
+  max-width: 100%;
+  @include respond-to(large){
+    max-width: 91.2rem;
+  }
 
   h2 {
     background: #518b8d;
-    width: 91rem;
+    width: 100%;
     margin: 0 auto .9rem;
     color: #0c383b;
     text-align: center;
+    @include respond-to(large){
+      max-width: 91rem;
+    }
     i {
       margin-left: 1rem;
       font-size: 2.6rem;
@@ -115,12 +133,21 @@
 }
 
 .product {
-  max-width: 30rem;
-  margin: .2rem;
+  max-width: 100%;
+  margin: 1rem;
+  @include respond-to(large){
+    max-width: 30rem;
+    margin: .2rem;
+  }
 }
 
 .special {
   max-width: 27rem;
+  display: none;
+  @include respond-to(large){
+    max-width: 27rem;
+    display: block;
+  }
   img {
     max-width: 27rem;
     margin: auto;

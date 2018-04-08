@@ -9,8 +9,7 @@
 
 	<title>@yield('title') compra chiviado</title>
 	<link href="{{mix('css/app.css')}}" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i,700,700i,900,900i">
-	<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i,700,700i,900,900i|Boogaloo">
 </head>
 <body>
 

@@ -64,7 +64,7 @@
 				</svg>
 				<strong>Bebidas </strong><i>El mejor traguito al mejor precio</i>
 			</h2>
-			<div class="row justify-end">
+			<div class="row justify-end-l justify-center">
 				@for($i = 1 ; $i <= 6; $i++)
 					<div class="product"><img src="images/imagen_{{$i}}.png" alt=""></div>
 			@endfor
@@ -196,7 +196,7 @@
 				</svg>
 				<strong>Aparatos electrónicos</strong><i>De todito y solo modernos</i>
 			</h2>
-			<div class="row justify-start">
+			<div class="row justify-center">
 				@for($i = 7 ; $i <= 12; $i++)
 					<div class="product"><img src="images/imagen_{{$i}}.png" alt=""></div>
 			@endfor

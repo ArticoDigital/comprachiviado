@@ -699,6 +699,6 @@
 							</g>
 						</g>
 					</svg>
-					<span>Perfumería</span>
+					<span>Perfumería</span>
 				</div>
 			</a></li>
