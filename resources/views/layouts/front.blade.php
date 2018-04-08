@@ -10,6 +10,10 @@
 	<title>@yield('title') compra chiviado</title>
 	<link href="{{mix('css/app.css')}}" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i,700,700i,900,900i|Boogaloo">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 </head>
 <body>
 
